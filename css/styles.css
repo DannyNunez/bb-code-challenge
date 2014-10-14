@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'BrandProductName';
+    src: url('../fonts/ProximaNovaExCn_Bold.eot'); /* IE9 Compat Modes */
+    url('../fonts/ProximaNovaExCn_Bold.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/ProximaNovaExCn_Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'SubText';
+    src: url('../fonts/ProximaNovaExCn.eot'); /* IE9 Compat Modes */
+    url('../fonts/ProximaNovaExCn.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/ProximaNovaExCn.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'PresentsText';
+    src: url('../fonts/ProximaNova-Reg.eot'); /* IE9 Compat Modes */
+    url('../fonts/ProximaNova-Reg.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/ProximaNova-Reg.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'RankText';
+    src: url('../fonts/ProximaNovaExCn_ExBold.eot'); /* IE9 Compat Modes */
+    url('../fonts/ProximaNovaExCn_ExBold.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/ProximaNovaExCn_ExBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: "Open Sans","Gill Sans MT","Gill Sans",Corbel,Arial,sans-serif;
+}
+
+.main-content {
+    padding-top: 10%;
+}
+
+.js-product-item-block {
+    background-color: #fff;
+    margin: 10px;
+    border-bottom: #4D4F53 1px;
+    height: 100%;
+    width: 450px;
+    padding: 5px;
+}
+
+.product-image {
+    text-align: center;
+    padding-top:25px;
+}
+.product-image img {
+    height: 150px;
+    width: 150px;
+    margin-left: -75px;
+}
+
+img.blackwhite {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
+
+.product-rank {
+    height: 50px;
+    width: 50px;
+    background-image:
+    linear-gradient(
+        #9c9c9c, #828282
+    );
+    text-align: center;
+    margin: auto;
+    color:#fff;
+    font-family: RankText inherit;
+    padding: 5px;
+}
+
+div.product-order-id  {
+    font-size: 30px;
+    display: inline-block;
+}
+
+div.product-rank-hash {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-right: -3px;
+}
+
+.brand-name {
+    font-family: BrandProductName inherit;
+    color:#00AEEF;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-brand-name {
+    font-family: BrandProductName inherit;
+    color:#4D4F53;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.product-brief-description {
+    font-family: SubText inherit;
+    color:#5A5A5A;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.product-description{
+    font-family: PresentsText inherit;
+    color:#919191;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+.product-details {
+    clear: both;
+    width: 100%;
+}

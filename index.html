@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>BodyBuilding.com Challenge</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="//www.bodybuilding.com/favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">BodyBuilding.com Challenge</a>
+        </div>
+    </div>
+</div>
+<div class="container main-content" id="js-main-region">
+</div>
+<!-- /.container -->
+<!-- templates -->
+<script type="text/template" id="js-product-container-template">
+</script>
+<script type="text/template" id="js-product-item-template">
+
+
+        <div class="pull-left product-rank">
+            <div class="product-rank-hash">&num;</div>
+            <div class="product-order-id"><%- productOrderIndex %></div>
+        </div>
+
+        <div class="product-image">
+            <img class="js-product-img blackwhite" src="http://store.bbcomcdn.com<%- white450PxImgUrl %>"/>
+        </div>
+
+        <div class="product-details">
+            <ul class="list-unstyled">
+                <li class="brand-name"><%- brandName %></li>
+                <li class="product-brand-name"><%- brandProductName %></li>
+                <li class="product-brief-description"><%- briefDescription %></li>
+                <li class="product-description"><%- description %></li>
+            </ul>
+        </div>
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/lib/isotope.pkgd.min.js"></script>
+<script src="js/lib/underscore-min.js"></script>
+<script src="js/lib/backbone-min.js"></script>
+<script src="js/lib/backbone.marionette.min.js"></script>
+<script src="js/modules/products/app.js"></script>
+<script src="js/modules/products/entities/product.js"></script>
+<script src="js/modules/products/list/list_view.js"></script>
+<script src="js/modules/products/list/list_controller.js"></script>
+<script type="text/javascript">
+    Products.start();
+</script>
+</body>
+</html>
